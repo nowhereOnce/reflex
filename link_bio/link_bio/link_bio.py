@@ -6,7 +6,15 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-    return rx.text("Hola Reflex!")
+    return rx.hstack(
+        rx.text(
+            "NowhereOnce",
+            ),
+        position = "sticky",
+        bg = "blue",
+        z_index = "999",
+        padding = "20px"
+    )
 
 
 app = rx.App()
